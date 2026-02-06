@@ -11,11 +11,6 @@ const userSchema = new mongoose.Schema({
 
     picture: String,
 
-    isAdmin: {
-        type: Boolean,
-        default: false
-    },
-
     cart: [],
     
     orders: []

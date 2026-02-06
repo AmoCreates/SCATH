@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const onwerSchema = new mongoose.Schema({
+const ownerSchema = new mongoose.Schema({
     fullname: String,
 
     email: String,
@@ -9,7 +9,7 @@ const onwerSchema = new mongoose.Schema({
 
     contact: Number,
 
-    gstin: Number,
+    gstin: String,
 
     product: [],
 
@@ -17,4 +17,4 @@ const onwerSchema = new mongoose.Schema({
 
 });
 
-module.exports = mongoose.model('onwer', onwerSchema)
+module.exports = mongoose.model('owner', ownerSchema)
