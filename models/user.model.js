@@ -11,7 +11,10 @@ const userSchema = new mongoose.Schema({
 
     picture: String,
 
-    cart: [],
+    cart: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref:'product'
+    }],
     
     orders: []
 });

@@ -6,8 +6,18 @@
     font-family: sans-serif;
 }
 
-body {
-    background-color: rgba(209, 205, 205, 0.075)
+#added {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0087ff;
+    color:white;
+    border-radius: 5px;
 }
 
 header {
@@ -140,9 +150,9 @@ select {
     font-size: 22px;
 }
 
-@media (min-width:1600px){
+@media (max-width:1600px){
     .product {
         height: 40vh;
-        width: 300px;
+        width: 280px;
     }
 }
